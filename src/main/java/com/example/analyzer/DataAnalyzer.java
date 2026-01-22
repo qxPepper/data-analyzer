@@ -23,6 +23,14 @@ public class DataAnalyzer {
                 Optional.of(entry.getLevel().equals("WARN") ? counterWARN++ : counterWARN);
                 Optional.of(entry.getLevel().equals("ERROR") ? counterERROR++ : counterERROR);
             }
+
+//            LogParser.parse(line).ifPresent(entry -> {
+//                switch (entry.getLevel()) {
+//                    case "INFO": counterINFO++; break;
+//                    case "WARN": counterWARN++; break;
+//                    case "ERROR": counterERROR++; break;
+//                }
+//            });
         }
 
         result.append("=== АНАЛИЗ ЗАВЕРШЁН ===").append("\n");

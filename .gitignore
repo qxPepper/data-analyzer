@@ -10,3 +10,5 @@ out/
 # ОС
 .DS_Store
 Thumbs.db
+
+.git
